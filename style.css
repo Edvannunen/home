@@ -31,8 +31,11 @@ a{color:inherit;}
 
 .tiles{
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:repeat(3,1fr);
   gap:24px;
+}
+@media (max-width:900px){
+  .tiles{grid-template-columns:1fr 1fr;}
 }
 @media (max-width:600px){
   .tiles{grid-template-columns:1fr;}
